@@ -1,0 +1,122 @@
+
+ /* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  /*box-sizing: border-box;*/
+  position: relative;
+  width: 50%;
+}
+
+
+.wrapperbg{ 
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  grid-auto-rows: minmax(auto, auto); 
+  z-index: -10;
+}
+
+.wrapperbg2{ 
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  grid-auto-rows: minmax(auto, auto); 
+  z-index: -100;
+}
+
+.shifter{
+  height: 40vh;
+  width: auto;
+}
+
+.span{
+  box-sizing: border-box;
+  width: 50vw;
+  height: 100vw;
+}
+
+/* Here change the value of border to 0px or 1 px to organize content. then disapper the boxes. */
+.wrap5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  z-index: 3;
+}
+.box5{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 15vh;
+}
+
+
+.wrap40{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: -1; 
+}
+
+.rb{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 15vh;
+}
+.rb:hover {
+  background-color: blue;
+}
+
+
+.rm{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  padding-top: 7vh;
+}
+
+.rt{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+}
+
+.lb{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 15vh;
+}
+
+.lm{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 7vh;
+}
+
+.lt{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.cen{
+  width: auto;
+  height: 20vh;
+  border: 0px solid blue;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 8vh;
+}

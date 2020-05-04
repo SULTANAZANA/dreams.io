@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#animatedBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("mesh2.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%; 
+/*adjust s value for speed*/
+  animation: animatedBackground 1000s linear infinite;
+  z-index: -50;
+}
+
+@keyframes animatedBackground { 
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 0 10000px;
+  }
+}
+
+h1 {
+  color: white;
+}
+
+.txt {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 7vw;
+  z-index: 60;
+  text-align: center;
+
+}
+
+.books3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+  padding: 2vw;
+  text-align: right;
+  perspective: 50vw;
+  z-index: 100;
+}
+
+.books3 .child{
+  transform: rotateY(13deg);
+  box-shadow: 4vw 5vw .5vw .5vw rgba(0, 0, 0, 0.4);
+
+  margin: 2vw;
+
+}
+
+
+
+.lines{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  padding: 8vw;
+  grid-auto-rows: minmax(auto, auto); 
+  line-height: 1.1;
+  z-index: 110;
+}
+
+.linesize1{
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 2vw;
+
+}
+
+.container{
+  border: 30px;
+  background-color: rgba(256, 256, 0, 0.2);
+
+}
+
+
+.containerblu{
+  border: 50px;
+  background-color: rgba(0, 0, 200, 0.2);
+  margin: 2vw;
+}
+
+.containerpink{
+  border: 50px;
+  background-color: rgba(200, 0, 50, 0.2);
+  margin: 2vw;
+
+}
+.bg{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  padding: 20px;
+  grid-auto-rows: minmax(auto, auto);
+  position: absolute;
+  top: 300px;
+  opacity: 0.8;
+  z-index: -30;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   
+   text-align: center;
+   line-height: 0.3;
+}

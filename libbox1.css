@@ -1,0 +1,15 @@
+.cols{
+  display: grid;
+  grid-template-columns: 3fr 4fr; 
+  padding: 20px;
+  grid-auto-rows: minmax(auto, auto);
+  position: relative;
+  top: 300px;
+  opacity: 0.8;
+  z-index: -30;
+}
+
+.text{
+  font-size: 0.7em;
+  line-height: 1em;
+}
