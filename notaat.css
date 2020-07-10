@@ -20,3 +20,12 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.convgrid {
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20em;
+  grid-auto-rows: minmax(auto, auto); 
+  z-index: -10;
+}
